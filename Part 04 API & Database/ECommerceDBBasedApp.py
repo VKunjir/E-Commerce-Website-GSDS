@@ -11,13 +11,13 @@ carts_collection = db["carts"]
 
 # Initialize a list of products with unique IDs
 products = [
-    {"prod_id": 1, "name": "Product 1", "price": 10.0},
-    {"prod_id": 2, "name": "Product 2", "price": 15.0},
-    {"prod_id": 3, "name": "Product 3", "price": 20.0},
+    {"id": 1, "name": "iPhone 13", "price": 999, "description": "The latest iPhone."},
+    {"id": 2, "name": "MacBook Pro", "price": 1499, "description": "Powerful laptop by Apple."},
+    {"id": 3, "name": "iPad Air", "price": 599, "description": "Thin and light iPad."},
 ]
 
 # Initialize an empty cart as a global variable
-#products_collection.insert_many(products)
+# products_collection.insert_many(products)
 
 # Define a collection to store cart items (for demonstration purposes)
 cart = []
@@ -31,7 +31,7 @@ def display_products():
 # Function to display a product by ID from the MongoDB database
 @app.route('/display_product/<int:product_id>', methods=['GET'])
 def display_product(product_id):
-    product = products_collection.find_one({"prod_id": product_id}, {"_id": 0})
+    product = products_collection.find_one({"id": product_id})
     if product:
         return jsonify({'product': product})
     else:
