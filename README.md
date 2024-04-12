@@ -1,6 +1,7 @@
 # E-commerce Platform
 
-![E-commerce Platform Logo](https://ecommerce-p0io.onrender.com/)
+![image](https://github.com/VKunjir/E-Commerce-Website-GSDS/assets/98226339/9f8b3fdf-b6fc-463d-8727-6a6e00f264c1)
+
 
 Introducing an e-commerce platform to facilitate online shopping. This platform provides a comprehensive solution for users to browse, search, and purchase products conveniently from the comfort of their homes.
 
